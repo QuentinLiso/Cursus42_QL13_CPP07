@@ -6,14 +6,14 @@
 /*   By: qliso <qliso@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 12:08:57 by qliso             #+#    #+#             */
-/*   Updated: 2025/04/07 15:26:10 by qliso            ###   ########.fr       */
+/*   Updated: 2025/05/02 09:24:18 by qliso            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.hpp"
 
 template < typename T >
-Array<T>::Array( void ) : Array( 0U )
+Array<T>::Array( void ) : _size( 0U ), _values( new T[0] )
 {
     
 }
